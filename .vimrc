@@ -1,6 +1,9 @@
 set relativenumber
 
 set showcmd
+set number
+set cursorline
+set cursorlineopt=both
 
 inoremap <C-b> ${}<Left>
 inoremap <C-b><C-b> "${}"<Left><Left>
@@ -28,5 +31,6 @@ syntax enable
 :color industry
 set background=dark
 :highlight LineNr ctermfg=7 guifg=#A9A9A9
+:highlight CursorLine cterm=NONE gui=NONE
 :highlight CursorLineNr ctermfg=Red guifg=Red
 " ========================================================="
